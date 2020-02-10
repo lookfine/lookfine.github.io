@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+    Name: Chia-Ling Yeh
+    Email: cyeh25@my.smccd.edu
+    Course: CIS-128-OLH-CRN43884
+    Homework#1
+    Date: 01-22-2020
+   -->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="CIS, Mobile, Mobile development, Chia-Ling"/>
+    <title>CIS128-Mobile Web App Development</title>
+    <link href="homework1A.css" rel="stylesheet"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#button").click(function(){
+            $("html, body").animate({scrollTop:0});
+            $("#meetme").css('border', '5px solid brown');
+            var title = $("#title");
+            title.animate({fontSize:'+=18px',}, 5000);
+            title.animate({fontSize:'-=18px'}, 5000);
+            title.css('color', 'cadetblue');
+        });
+});
+    </script>
+</head>
+
+<body>
+<h1 id="title">CIS128 - Mobile Web App Development</h1>
+<article>
+    <img src="meetme.jpg" alt="bioshot" id="meetme">
+    <p id="intro"> 
+        Hi, my name is Chia-Ling. I was a high school Chinese literature teacher in Taiwan. Additionally, I'm devoted to human rights education, working on how to engage teenagers to be aware of their rights as well as the injustice around the world. I enjoy this job deeply. To see students learn to care and to speak up for themselves or others is one of the most wonderdul thing in my life. </p>
+    <p id="motivation">
+        2019 summer, to enrich my career, I started my exploration to web programming. I believe that this skill is crititcal if I want to expand the influence of my work because it could help me connect, not only to more students, but also to more people with the same educational goal. With no background in computer science, for now it has been fun for me to learn how we communicate with computers using precise and strutural sets of rules. Look forward to the class.</p>
+    <h2>Technologies for this class</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <h2>Resources</h2>
+    <dl>
+        <dt><a href="https://www.w3schools.com/" target="_blank">W3School</a></dt>
+        <dd>W3Schools is a web developers site, with tutorials and references on web development languages such as HTML, CSS, JavaScript, PHP, SQL, Python, jQuery, Java, C++, C#, React, XML, W3.CSS, and Bootstrap, covering most aspects of web programming. The example codes and the "try me" section are very useful.</dd>
+        <dt><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></dt>
+        <dd>Founded in 2008, Stack Overflow is the largest, most trusted online community for anyone that codes to learn, share their knowledge, and build their careers. More than 50 million unique visitors come to Stack Overflow each month to help solve coding problems, develop new skills, and find job opportunities. This website is a fantastic resource as most of my questions have already been asked and answers here already.</dd>
+    </dl>
+</article>
+
+<button id="button">Start animtation</button>
+    
+    <footer>
+    </footer>
+</body>
+
+</html>
