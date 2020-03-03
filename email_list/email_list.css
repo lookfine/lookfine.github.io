@@ -1,0 +1,34 @@
+/*
+   Name: Chia-Ling Yeh
+   Email: cyeh25@my.smccd.edu
+   Course: CIS 114 OL
+   File name: email_list.js
+   Assigment3
+   Date: 02-14-2020
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+	padding: 0 2em 1em;
+    width: 600px;
+    border: 3px solid blue;
+}
+h1 {
+	color: blue;
+}
+label {
+	float: left;
+    width: 11em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+	margin-right: 1em;
+    margin-bottom: .5em;
+    width: 11em;
+}
+span {
+	color: red;
+}
