@@ -1,0 +1,260 @@
+/* reset */
+body, h1, h2, h3, p, img, ul, li{
+    border:0; margin:0; padding:0;
+}
+
+/* basic format */
+body{
+    background:#eaf8fb;	
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size:13px; 
+	}
+		
+p{
+    letter-spacing:.04em; 
+    line-height:30px; 
+	}
+		
+div#header{
+    background-color:#333; /* a more specific way to set a background color */
+    background-image:url(images/headerbkgd.png); /* sets a background image in the header and the position it should sit */
+    background-repeat:no-repeat; /* sets a background image to repeat, repeat-x, repeat-y or not at all as written in this rule */
+    background-position:left bottom;/* sets a background image position */
+    color:#fff;	/* sets the the color of all header text to white */
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;	
+    margin:0 auto;
+    min-height:130px;
+    padding:45px 15px 15px;
+}
+
+ul.navigation {
+    list-style:none;	
+    margin-top:20px;
+}
+					
+ul.navigation li{
+    display:inline-block; 
+    margin:10px 3px 5px;	 
+}
+					
+ul.navigation li a{
+    background:#4a4a4a;	
+    color:#fff;	
+    -moz-border-radius:2px; 
+    webkit-border-radius:2px; 
+    border-radius:2px;
+    border:1px solid #595959; 
+    padding:7px 15px;	
+    text-decoration:none; 
+    font-size: 1.3em;
+}
+						
+ul.navigation li a:hover{
+    background-color:#000; 
+}
+	
+div.content{
+    margin:15px auto; 
+}
+				
+div.col-right{
+    float:right;
+}
+		
+div.sidebar-left{
+    float:left;
+    padding:0 10px;
+}
+		
+div.sidebar-left a{
+    color:#445e64;
+}
+	
+div.sidebar-left a:hover{
+    text-decoration:none
+}	
+	
+.list{
+    border-bottom:1px solid #c3dce1; 
+    padding:0 0 20px 15px;
+	}
+
+.list li{
+    margin-bottom:10px
+	}
+
+.list li a{
+    font-weight:bold;	
+    text-transform:uppercase;	
+    font-size:11px;	
+	}
+				
+div#footer{
+    background-color:#c4d5d9;
+    margin:0 auto;
+    text-align:center;
+	}
+
+.float-left{
+    float:left;	
+    margin:0  10px 10px 0;
+	}
+
+.float-right{
+    float:right;	
+}
+
+.float-right img{
+    margin:0 0 10px 10px;	
+}
+
+.clear{
+    clear:both;
+}	
+
+/*Structure*/
+
+@media screen and (max-width:480px) {
+    
+    
+/* header format */
+    
+#header {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.3em;
+    min-height: 0;
+    }
+    
+#header h1, #header h2 {
+    padding-top: 10px;
+    }
+    
+ul.navigation li {
+    width: 100%;
+    background:#4a4a4a;
+    padding: 20px 0;
+    border:1px solid #595959;  
+    margin: 0;
+    }
+    
+ul.navigation li a{
+    border: none;
+    font-size: 1.3em;
+    margin: 0;
+    }
+    
+/* sidebar and column format */    
+
+ .sidebar-left, .col-right {
+     padding-left: 15px;
+     padding-right: 15px;
+    }
+    
+p {
+    font-size: 1.4em;
+    padding-bottom: 20px;
+    }
+    
+h3 {
+    font-size: 1.6em;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    }
+        
+img.float-left {
+    width: 100%;
+    padding-bottom: 15px;
+    }
+
+.list{
+    border-bottom:none; 
+    padding:0 0 20px 5px;
+    list-style-type: none;
+	}
+    
+.list li a{
+    font-size: 1.4em;
+    }
+    
+/* footer format */
+
+#footer p {
+    padding-top: 7px;
+    font-size: 1.2em;
+    }
+}
+
+
+@media screen and (min-width:481px) {
+
+body, #header, .navigation, #footer {
+    width: 100%;
+    }
+
+/* sidebar format */
+.sidebar-left{
+    display: block;
+    float: left;
+    margin: 0 0 0 10px;
+    width: 22%;
+    }
+
+.sidebar-left p {
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    line-height: 22px;
+    }
+    
+.sidebar-left h3 {
+    font-size: 1.6em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    }
+
+.list li a{
+    font-size: 1.4em;
+    }
+    
+/* col-right format */
+.col-right  {
+    display: block;
+    float: right;
+    margin: 0 10px 0 0;
+    width: 70%;
+    height: 500px;
+    }
+    
+.col-right h3 {
+    font-size: 1.6em;
+    }
+    
+.col-right p{
+    font-size: 1.5em;
+    }
+
+/* image animation */
+@keyframes example {
+  from {opacity: 0.2;}
+  to {opacity: 1;}
+    }
+
+#img_destruction {
+    animation-name: example;
+    animation-duration: 6s;
+    }
+    
+/* footer format */
+#footer {
+    opacity: 0.5;
+    }
+    
+#footer:hover {
+    opacity: 1;
+    }
+}
