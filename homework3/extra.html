@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Extra</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">ABC Company</a> 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcollapsed">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navcollapsed">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="location.html">
+                  Location
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="extra.html">
+                  Extra
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search">
+              <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+    </nav>
+
+    <h1 style="margin-top: 2em; margin-bottom: 1em; text-align: center;">Capabilities offered by WURFL</h1>
+       
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Capability Name</th>
+          <th>Description</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>is_tablet</td>
+          <td>True if a device is a tablet computer (iPad and similar, regardless of OS).</td>
+          <td>product_info</td>  
+        </tr>
+        <tr>
+          <td>resolution_height</td>
+          <td>Screen height expressed in physical pixels.</td>
+          <td>display</td>  
+        </tr>
+        <tr>
+          <td>form_factor</td>
+          <td>Returns the device's form factor based on categorization provided by multiple capability tests.</td>
+          <td>virtual</td>  
+        </tr>
+      </tbody>
+      <tfoot class="table-warning">
+        <tr><td colspan="3" style="text-align: right;">Explore more WURFL capabilities <a href="https://www.scientiamobile.com/capabilities/">here</a></td></tr>
+      </tfoot>
+    </table>
+
+    </div>
+</body>
+</html>
