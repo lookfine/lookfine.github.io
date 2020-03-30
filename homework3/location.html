@@ -56,7 +56,8 @@
         <h1 style="margin-top: 2em;">Find out where you are</h1>
 
   <input type="submit" class="btn-outline-secondary" value="Get Location" onClick="getLocation();" style="margin-bottom: 1em;">
-
+  <p id="show_latitude"></p>
+  <p id="show_longitude"></p>
         <div id="mapid" style="height: 600px;"></div>
     </div>
     <script>
@@ -77,6 +78,8 @@
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoiYmJyb29rMTU0IiwiYSI6ImNpcXN3dnJrdDAwMGNmd250bjhvZXpnbWsifQ.Nf9Zkfchos577IanoKMoYQ'
   }).addTo(mymap);
+	      $("#show_latitude").text("Latitude = " + location.coords.latitude);
+  $("#show_longitude").text("Longitude = " + location.coords.longitude);
 
   var marker = L.marker(latlng).addTo(mymap);
       }
