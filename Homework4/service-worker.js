@@ -1,6 +1,7 @@
 
 const CACHE_VERSION = "myapp";
 const FILES_TO_CACHE = [
+    "index.html"
     "image/lightblue.jpg",
     "image/lightgold.jpg",
     "main.css"
