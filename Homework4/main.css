@@ -1,0 +1,47 @@
+body {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+h2 {
+    padding-top: 1em;
+}
+
+dl {
+    font-size: 1.2em;
+}
+
+dt {
+    font-style: italic;
+    font-weight: bold;
+    padding-top: .5em;
+}
+
+.background {
+    max-width: 200px;
+}
+
+.image {
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+
+#backgroundlist {
+    padding-right: 5em;
+    width: 20%;
+}
+
+#button {
+    padding: .5em;
+    min-width: 80px;
+    border: none;
+    background-color: darkgreen;
+    color: ivory;
+    font-size: 1em;
+}

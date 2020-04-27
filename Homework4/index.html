@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progresiive Website Application</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>	
+    <link rel="stylesheet" href="main.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="service-worker.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon/icon-512x512.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PWA Practice">
+    <meta name="apple-mobile-web-app-title" content="PWA Practice">
+    <meta name="theme-color" content="#ABEBC6">
+    <meta name="msapplication-navbutton-color" content="#ABEBC6">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="homework4-PWA Practice">
+    <!-- register service-worker -->
+    <script>
+        if (navigator.serviceWorker) {
+            window.addEventListener('load', () => {
+	        navigator.serviceWorker.register('service-worker.js')
+	            .then(registration => console.log('SW registered'))
+                .catch(err => console.log(`SW not registered - Error: ${err}`))
+        })
+        } else {
+            console.log('Service Worker is not supported in this browser.')
+        }
+    </script>
+</head>
+<body>
+    <h1>Homework 04 PWA Practice</h1>
+    <h2>Characteristics of a Progresiive Website Application</h2>
+    <dl>
+        <dt>Reliable</dt>
+        <dd>It means that when the app is launched, the PWA will load instantly, regardless of the network state – we previously saw the using of Service Workers, written in JavaScript that will pre-cache key resources of the application thus eliminating the dependence on the network and making sure that the user will have an instant and reliable experience.</dd>
+        <dt>Fast</dt>
+        <dd>According to some studies, 53% of users will abandon a site that takes longer than 3 seconds to load! And even when the application/site is loaded, the users expect them to be fast with no slow-to-respond interfaces.</dd>
+        <dt>Engaging</dt>
+        <dd>Users are able to install PWA’s and those will live on the user’s home screen without the need for any type of app store. These applications offer a very rich experience with the help from a web app manifest file and can re-engage users with web push notifications. The manifest file allows you to control how your app appears and how it’s launched.</dd>
+        <dt>Easy to Share</dt>
+        <dd>Progressive Web Apps are very easy to share with your friends or colleagues. All that a user needs to share is the website/app URL. Users don’t need to share an installable apk or go through the process of verification followed by downloading tons of files. All that a user requires is a simple click.</dd>
+    </dl>
+    <laebl for="backgroundlist">
+        <h2>Choose your background</h2>
+        <select name="backgroundlist" id="backgroundlist">
+            <option value="blue">Light Blue</option>
+            <option value="gold">Light Gold</option>
+        </select>
+    </laebl>
+    <button id="button">GO!</button><br>
+    <!-- Click event for changing background -->
+    <script>
+        $("#button").click(function(){
+            if ( $("select").val() == "blue" ) {
+                $("body").css("background-image", "url('image/lightblue.jpg')");
+                $("body").css("background-repeat", "no-repeat");
+            }
+            else if ( $("select").val() == "gold" ) {
+                $("body").css("background-image", "url('image/lightgold.jpg')");
+                $("body").css("background-size", "cover");
+            }
+        })
+    </script>
+    <div  class="image">
+        <img src="image/lightblue.jpg" class="background" alt="Light Blue">
+        <p>Light Blue</p>
+    </div>
+    <div class="image">
+        <img src="image/lightgold.jpg" class="background" a;t="Light Gold">
+        <p>Light Gold</p>
+    </div>
+</body>
+
+</html>
